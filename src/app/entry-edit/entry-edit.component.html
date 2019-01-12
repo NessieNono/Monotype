@@ -1,3 +1,44 @@
-<p>
-  entry-edit works!
-</p>
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+
+      <div class="form-group">
+        <label class="col-md-4">Entry Title</label>
+        <input type="text" class="form-control" 
+        formControlName="entry_title" #entry_title 
+        [(ngModel)] = "entry.entry_title" />
+      </div>
+
+      <div *ngIf="angForm.controls['entry_title'].invalid && (angForm.controls['entry_title'].dirty || angForm.controls['entry_title'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['entry_title'].errors.required">
+          Please enter a title. 
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4"> Entry Body </label>
+        <input type="text" class="form-control" 
+        formControlName="entry_body" #entry_body
+        [(ngModel)] = "entry.entry_body" />
+      </div>
+
+
+
+      <div *ngIf="angForm.controls['entry_body'].invalid && (angForm.controls['entry_body'].dirty || angForm.controls['entry_body'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['entry_body'].errors.required">
+          Please enter a body.
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <button (click)="updateEntry(entry_title.value, entry_body.value)"
+        [disabled]="angForm.invalid" 
+        class="btn btn-primary">Update Entry</button>
+      </div>
+
+
+
+    </form>
+  </div>
+</div>

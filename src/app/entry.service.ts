@@ -14,18 +14,37 @@ export class EntryService {
 
 	constructor(private http: HttpClient) { }
 
-
-
 	// service will send the HTTP Post request to the Node.js server.
 	addEntry(entry_title, entry_body) {
 	const obj = {
 		entry_title: entry_title, 
 		entry_body: entry_body
 	};
-	console.log("this is entry.service.ts: ", obj);
-	console.log("entry title: ", obj.entry_title); 
-	console.log("entry body: ", obj.entry_body); 
 	this.http.post(`${this.uri}/add`, obj)
 	    .subscribe(res => console.log('Done'));
 	}
+
+	// fetches the entries data from the MongoDB database
+	getEntries() {
+		let entries = this.http.get(`${this.uri}`); 
+		console.log(entries);
+    	return this.http.get(`${this.uri}`);
+  	}
+
+  	// just grabs the appropriate entry
+	editEntry(id) {
+		return this.http.get(`${this.uri}/edit/${id}`);
+	}
+
+	// Updates the data after editing 
+	updateEntry(entry_title, entry_body, id) {
+		const obj = {
+			entry_title: entry_title, 
+			entry_body: entry_body
+		};
+		this.http
+			.put(`${this.uri}/update/${id}`, obj)
+			.subscribe(res => console.log('Done'));
+	}
+
 }

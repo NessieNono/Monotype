@@ -35,7 +35,7 @@ Link
 https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/
 time start: 11:50
 Time 
-No problems until step 13: Create Models and Routes for APplication
+No problems until step 15: Displaying Data on Frontend 
 
 Why Should I use Reactive Forms? : https://stackoverflow.com/questions/45255218/angular2-4-what-for-should-i-use-reactive-forms-when-there-is-built-in-formsmod
 
@@ -68,3 +68,8 @@ Mongoose is an object data modeling (ODM) library that provides a rigorous model
 
 ### Naming Collections in Mongodb
 https://stackoverflow.com/questions/9868323/is-there-a-convention-to-name-collection-in-mongodb
+
+
+### Cannot match any routes 
+Us e
+`./edit/:_id`

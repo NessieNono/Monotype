@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+// get the Model
+import Entry from '../Entry';
+import { EntryService } from '../entry.service';
+
 @Component({
   selector: 'app-entry-get',
   templateUrl: './entry-get.component.html',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntryGetComponent implements OnInit {
 
-  constructor() { }
+	// private attributes
+	entries: Entry[];
+
+  constructor(private es: EntryService) { }
 
   ngOnInit() {
+	this.es.getEntries().subscribe((data: Entry[]) => {
+		this.entries = data;
+	});
   }
 
 }

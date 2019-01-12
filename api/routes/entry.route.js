@@ -10,6 +10,7 @@ let Entry = require('../models/Entry');
 // Defined store route
 entryRoutes.route('/add').post(function (req, res) {
   let entry = new Entry(req.body);
+  // These comments will show up in the terminal
   console.log("this is the entry we have instantiated: ", entry);
   entry.save()
     .then(entry => {
@@ -35,14 +36,16 @@ entryRoutes.route('/').get(function (req, res) {
 // Defined edit route
 entryRoutes.route('/edit/:id').get(function (req, res) {
   let id = req.params.id;
+  console.log("this is the id received: " + id);
   Entry.findById(id, function (err, entry){
       res.json(entry);
   });
 });
 
 //  Defined update route
-entryRoutes.route('/update/:id').post(function (req, res) {
-    Entry.findById(req.params.id, function(err, next, entry) {
+//i changed it to put
+entryRoutes.route('/update/:id').put(function (req, res, next) {
+    Entry.findById(req.params.id, function(err, entry) {
     if (!entry)
       return next(new Error('Could not load Document'));
     else {
