@@ -16,6 +16,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 // For the missing ControlContainer
 import { FormsModule } from '@angular/forms';
 
+// HttpClient 
+import { HttpClientModule } from '@angular/common/http';
+
+// The created Service 
+import { EntryService } from './entry.service';
+
 
 @NgModule({
   declarations: [
@@ -29,9 +35,10 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule, 
     SlimLoadingBarModule, 
     ReactiveFormsModule, 
-    FormsModule
+    FormsModule, 
+    HttpClientModule
   ],
-  providers: [],
+  providers: [EntryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

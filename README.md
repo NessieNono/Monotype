@@ -35,7 +35,7 @@ Link
 https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/
 time start: 11:50
 Time 
-No problems until step 8: Configure HTTPClient Module 
+No problems until step 11: Submit Data to Node Server
 
 Why Should I use Reactive Forms? : https://stackoverflow.com/questions/45255218/angular2-4-what-for-should-i-use-reactive-forms-when-there-is-built-in-formsmod
 
