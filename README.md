@@ -65,6 +65,7 @@ https://stackoverflow.com/questions/46670795/how-to-change-whole-page-background
 - [ ] There is a timer, and work automatically saves after some time
 - [ ] ActiveRouteActivated
 - [ ] Animations to seem dynamic 
+- [ ] Add word count on the bottom
 
 
 ## Home Page

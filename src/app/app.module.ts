@@ -26,6 +26,9 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
+// For the timer
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +45,27 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SlimLoadingBarModule, 
     ReactiveFormsModule, 
     FormsModule, 
-    HttpClientModule
+    HttpClientModule, 
+    NgCircleProgressModule.forRoot({
+      "backgroundColor": "#fdc400",
+      "radius": "114",
+      "space": "30",
+      "toFixed": "0",
+      "maxPercent": "100",
+      "unitsFontSize": "26",
+      "unitsColor": "#483500",
+      "outerStrokeWidth": "10",
+      "outerStrokeColor": "#FFFFFF",
+      "innerStrokeColor": "#FFFFFF",
+      "titleColor": "#483500",
+      "titleFontSize": "54",
+      "subtitleColor": "#483500",
+      "animationDuration": "7400",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showUnits": false,
+      "showInnerStroke": false
+    })
   ],
   providers: [EntryService],
   bootstrap: [AppComponent]
