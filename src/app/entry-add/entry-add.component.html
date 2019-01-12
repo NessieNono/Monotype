@@ -24,7 +24,10 @@
       <div class="form-group">
         <button type="submit" 
         [disabled]="angForm.pristine || angForm.invalid" 
-        class="btn btn-primary">Save</button>
+        class="btn btn-primary"
+        (click)="addEntry(entry_title, entry_body)"
+        [disabled]="angForm.pristine || angForm.invalid" 
+        >Save</button>
       </div>
     </form>
   </div>
