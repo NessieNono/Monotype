@@ -30,15 +30,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ---------------------------------------------------------------------------------------------------
-
+# Progress
 Link
 https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/
-
-
 time start: 11:50
+Time 
+No problems until step 8: Configure HTTPClient Module 
 
-
-start Using Visual Studio code, apparently best for jS developement
+Why Should I use Reactive Forms? : https://stackoverflow.com/questions/45255218/angular2-4-what-for-should-i-use-reactive-forms-when-there-is-built-in-formsmod
 
 
 
@@ -48,4 +47,7 @@ start Using Visual Studio code, apparently best for jS developement
 * Perform CRUD Operations on journal entries
 * Validation 
 
+---------------------------------------------------------------------------------------------------
 
+# Notes 
+start Using Visual Studio code, apparently best for jS developement

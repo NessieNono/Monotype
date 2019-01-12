@@ -10,6 +10,12 @@ import { EntryEditComponent } from './entry-edit/entry-edit.component';
 // Loading Bar
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 
+// Reactive Forms 
+import { ReactiveFormsModule } from '@angular/forms';
+
+// For the missing ControlContainer
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +27,9 @@ import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    SlimLoadingBarModule
+    SlimLoadingBarModule, 
+    ReactiveFormsModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
