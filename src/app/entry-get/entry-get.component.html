@@ -12,7 +12,10 @@
           <td>{{ entry.entry_title }}</td>
           <td>{{ entry.entry_body }}</td>
           <td><a [routerLink]="['./edit', entry._id]" class="btn btn-primary">Edit</a></td>
-          <td><a [routerLink]="" class="btn btn-danger">Delete</a></td>
+          <td><a 
+            [routerLink]="" 
+            class="btn btn-danger"
+            (click)="deleteEntry(entry._id)" >Delete</a></td>
       </tr>
   </tbody>
 </table>

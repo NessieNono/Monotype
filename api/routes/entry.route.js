@@ -43,7 +43,7 @@ entryRoutes.route('/edit/:id').get(function (req, res) {
 });
 
 //  Defined update route
-//i changed it to put
+// i changed it to put
 entryRoutes.route('/update/:id').put(function (req, res, next) {
     Entry.findById(req.params.id, function(err, entry) {
     if (!entry)
@@ -63,8 +63,8 @@ entryRoutes.route('/update/:id').put(function (req, res, next) {
 });
 
 // Defined delete | remove | destroy route
-entryRoutes.route('/delete/:id').get(function (req, res) {
-    entry.findByIdAndRemove({_id: req.params.id}, function(err, entry){
+entryRoutes.route('/delete/:id').delete(function (req, res) {
+    Entry.findByIdAndRemove({_id: req.params.id}, function(err){
         if(err) res.json(err);
         else res.json('Successfully removed');
     });

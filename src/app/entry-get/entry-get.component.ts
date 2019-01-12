@@ -22,4 +22,9 @@ export class EntryGetComponent implements OnInit {
 	});
   }
 
+  // Wrapping the delete function
+  deleteEntry(id) {
+    this.es.deleteEntry(id);
+  }
+
 }

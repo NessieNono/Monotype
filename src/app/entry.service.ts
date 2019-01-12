@@ -47,4 +47,15 @@ export class EntryService {
 			.subscribe(res => console.log('Done'));
 	}
 
+	// Defining the delete function
+	deleteEntry(id) {
+		console.log("defining the delete function");
+	    this.http.delete(`${this.uri}/delete/${id}`)
+	    .subscribe(res=> {
+	    	console.log(res); 
+	    	console.log("ths is delete entry functon in service"); 
+	    	
+	    })
+	  }
+
 }
