@@ -33,22 +33,49 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Progress
 Link
 https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/
-time start: 11:50
-Time 
+
+(11:50) Start Programming 
+(15:25) CRUD operations complete 
+
+
 No problems until step 15: Displaying Data on Frontend 
 
 Why Should I use Reactive Forms? : https://stackoverflow.com/questions/45255218/angular2-4-what-for-should-i-use-reactive-forms-when-there-is-built-in-formsmod
 
+Angular Material
+https://www.tutorialspoint.com/angular_material/angular_material_overview.htm
 
+Changing the entire background color: 
+https://stackoverflow.com/questions/46670795/how-to-change-whole-page-background-color-in-angular
+
+
+[Website Inspiration](https://relativityoftime.net/)
 
 ---------------------------------------------------------------------------------------------------
 
 # Features 
 * Perform CRUD Operations on journal entries
-* Validation 
+* Form Validation 
 
 ---------------------------------------------------------------------------------------------------
+# Checklist 
 
+- [ ] Create monochrome theme
+- [ ] Automate Dates on each of the entries 
+- [ ] There is a timer, and work automatically saves after some time
+
+
+## Home Page
+
+## Create Entry
+
+
+## Entries 
+
+## About
+
+
+---------------------------------------------------------------------------------------------------
 # Notes 
 start Using Visual Studio code, apparently best for jS developement
 
@@ -74,8 +101,10 @@ https://stackoverflow.com/questions/9868323/is-there-a-convention-to-name-collec
 Us e
 `./edit/:_id`
 
+### Google fonts 
+font-family: 'Coiny', cursive;
+font-family: 'Open Sans', sans-serif;
 
-Angular Material
-https://www.tutorialspoint.com/angular_material/angular_material_overview.htm
+
 
 

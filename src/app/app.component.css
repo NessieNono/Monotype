@@ -1,0 +1,25 @@
+/* FIXING THE NAVBAR */
+body {
+	color: white;
+	background-color: #1C2833;
+}
+
+.navbar {
+	background-color: #17202A;
+	padding: 0em;
+}
+
+.nav-link {
+	font-family: "Open Sans", sans-serif;
+	color: #C4EBFF;
+	padding-top: 1em; padding-bottom: 1em;
+	padding-left: 2em!important; padding-right: 2em!important;
+}
+
+
+.nav-link:hover {
+	color: white;
+	background-color: #273746;
+	-webkit-transition: background-color 1s; /* Safari */
+	transition: background-color 1s;
+}

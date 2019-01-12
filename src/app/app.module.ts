@@ -21,6 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 // The created Service 
 import { EntryService } from './entry.service';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import { EntryService } from './entry.service';
     AppComponent,
     EntryAddComponent,
     EntryGetComponent,
-    EntryEditComponent
+    EntryEditComponent,
+    HomeComponent,
+    AboutComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
