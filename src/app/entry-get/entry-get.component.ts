@@ -24,7 +24,17 @@ export class EntryGetComponent implements OnInit {
 
   // Wrapping the delete function
   deleteEntry(id) {
-    this.es.deleteEntry(id);
+    this.es.deleteEntry(id).subscribe(res => {
+        console.log(res); 
+        console.log("ths is delete entry function in service"); 
+        // remove that deleted entry from the DOM manually to reflect changes 
+        const table = document.getElementById("tablebody");
+        let deletedEntry = document.getElementById(id);
+        console.log("this is the entry we are going to remove from the dom: ", deletedEntry);
+        table.removeChild(deletedEntry);
+        
+
+      })
   }
 
 }
