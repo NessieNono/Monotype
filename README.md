@@ -25,3 +25,27 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+Link
+https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/
+
+
+time start: 11:50
+
+
+start Using Visual Studio code, apparently best for jS developement
+
+
+
+---------------------------------------------------------------------------------------------------
+
+# Features 
+* Perform CRUD Operations on journal entries
+* Validation 
+
+
