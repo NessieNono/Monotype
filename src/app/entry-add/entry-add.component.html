@@ -19,9 +19,9 @@
       <div class="form-group">
         <label class="col-md-4"> Entry Body </label>
 
-        <input type="text" class="form-control" 
+        <textarea type="text" class="form-control" 
         formControlName="entry_body" 
-        #entry_body />
+        #entry_body> </textarea>
 
       </div>
       <div *ngIf="angForm.controls['entry_body'].invalid && (angForm.controls['entry_body'].dirty || angForm.controls['entry_body'].touched)" class="alert alert-danger">

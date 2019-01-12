@@ -1,0 +1,9 @@
+.card {
+	background-color: #F8F5F4;
+	margin-top: 10vh; 
+	padding: 1em;
+}
+
+textarea {
+	height: 36vh;
+}

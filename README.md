@@ -60,9 +60,11 @@ https://stackoverflow.com/questions/46670795/how-to-change-whole-page-background
 ---------------------------------------------------------------------------------------------------
 # Checklist 
 
-- [ ] Create monochrome theme
-- [ ] Automate Dates on each of the entries 
+- [ ] Create lite monochrome theme
+- [ ] Automate Date Entries on each of the entries 
 - [ ] There is a timer, and work automatically saves after some time
+- [ ] ActiveRouteActivated
+- [ ] Animations to seem dynamic 
 
 
 ## Home Page

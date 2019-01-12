@@ -1,8 +1,10 @@
 /* FIXING THE NAVBAR */
 body {
-	color: white;
-	background-color: #1C2833;
+	color: 242333;
+	background-color: #F8F5F4;
 }
+
+ * { font-family: 'Roboto Mono', monospace; }
 
 .navbar {
 	background-color: #17202A;
@@ -10,16 +12,21 @@ body {
 }
 
 .nav-link {
-	font-family: "Open Sans", sans-serif;
-	color: #C4EBFF;
-	padding-top: 1em; padding-bottom: 1em;
+	font-size: 1em;
+	color: #F8F5F4;
 	padding-left: 2em!important; padding-right: 2em!important;
 }
 
 
 .nav-link:hover {
 	color: white;
-	background-color: #273746;
+	background-color: #4F8587;
 	-webkit-transition: background-color 1s; /* Safari */
 	transition: background-color 1s;
+}
+
+/* For the routerLinkActive*/ 
+.active {
+	color: white;
+	background-color: #888096;
 }
