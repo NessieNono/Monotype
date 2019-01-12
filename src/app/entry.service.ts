@@ -22,7 +22,9 @@ export class EntryService {
 		entry_title: entry_title, 
 		entry_body: entry_body
 	};
-	console.log(obj);
+	console.log("this is entry.service.ts: ", obj);
+	console.log("entry title: ", obj.entry_title); 
+	console.log("entry body: ", obj.entry_body); 
 	this.http.post(`${this.uri}/add`, obj)
 	    .subscribe(res => console.log('Done'));
 	}
