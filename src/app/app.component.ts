@@ -7,6 +7,11 @@ import { NavigationCancel,
         NavigationStart,
         Router } from '@angular/router';
 
+// for animating the navbar 
+
+
+
+
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',

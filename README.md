@@ -41,6 +41,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * This check is a safeguard, not a bug
 [Enter Leave Animations](https://medium.freecodecamp.org/how-to-use-animation-with-angular-6-675b19bc3496)
 [Free Ink Splatters](https://every-tuesday.com/freebie-mini-ink-splatter-textures/)
+[Removing Blue Outline](https://gist.github.com/juliuscsurgo/4440047)
 
 ### LifeCycle Hooks
 
@@ -67,14 +68,16 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 
 - [x] Animation on page load of front page
 - [x] Create lite monochrome theme
-- [ ] Implement Bouncing Title 
-- [ ] Make pages slide with animation
+- [x] Implement Bouncing Title 
+- [ ] Make pages slide across with animation
 - [ ] Automate Date Entries on each of the entries 
-- [ ] There is a timer, and work automatically saves after some time
-- [ ] ActiveRouteActivated
+- [ ] There is a digital timer, and work automatically saves after some time
+- [x] ActiveRouteActivated
 - [ ] Animations to seem dynamic 
 - [ ] Add word count on the bottom
 - [ ] Add option to start/reset timer
+- [ ] Confirmation after a create entry
+- [ ] Make the icons only if on phone
 
 
 ## Home Page
