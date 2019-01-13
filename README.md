@@ -73,6 +73,7 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [ ] Automate Date Entries on each of the entries 
 - [ ] There is a digital timer, and work automatically saves after some time
 - [x] ActiveRouteActivated
+- [ ] Make the lists have a preview of the first 100 words, followed by ...
 - [ ] Animations to seem dynamic 
 - [ ] Add word count on the bottom
 - [ ] Add option to start/reset timer
@@ -121,5 +122,27 @@ font-family: 'Coiny', cursive;
 font-family: 'Open Sans', sans-serif;
 
 
+### Form Warnings
+
+```
+<div *ngIf="angForm.controls['entry_title'].invalid && (angForm.controls['entry_title'].dirty || angForm.controls['entry_title'].touched)" 
+class="alert alert-danger warning-container">
+<div *ngIf="angForm.controls['entry_title'].errors.required" 
+class="warning">
+Please enter a title.
+</div>
+</div>
+
+```
+
+```
+<div *ngIf="angForm.controls['entry_body'].invalid && (angForm.controls['entry_body'].dirty || angForm.controls['entry_body'].touched)" 
+class="alert alert-danger warning-container">
+<div *ngIf="angForm.controls['entry_body'].errors.required"
+class="warning">
+Please enter a body.
+</div>
+</div>
 
 
+```

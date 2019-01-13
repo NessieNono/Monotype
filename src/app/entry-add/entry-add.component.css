@@ -45,5 +45,12 @@ textarea:focus {
 input[type="text"], textarea {
 	outline: none;
 	box-shadow:none !important;
-	border:1px solid #ccc !important;
+	border: none !important;
+	border-bottom: none!important;
+}
+
+
+
+textarea {
+	height: 50vh;
 }

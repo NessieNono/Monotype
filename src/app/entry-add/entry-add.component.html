@@ -1,53 +1,41 @@
 <div class="row">
 
-  <div class="col-md-3">
 
-  </div>
-
-  <div class="col-md-9"> 
+  <div class="col-md-12"> 
 
     <div class="card">
       <div class="card-body">
         <form [formGroup]="angForm" novalidate>
 
           <div class="form-group">
+            <button type="submit" 
+            [disabled]="angForm.pristine || angForm.invalid" 
+            class="btn btn-primary"
+            (click)="addEntry(entry_title.value, entry_body.value)"
+            [disabled]="angForm.pristine || angForm.invalid">
+            <i class="fas fa-save"></i> Save</button>
+          </div>
+
+          <div class="form-group">
             <input type="text" class="form-control" 
             formControlName="entry_title" 
             #entry_title 
-            autofocus/>
+            autofocus
+            placeholder="Enter the title" />
           </div>
+          <hr>
 
-          <div *ngIf="angForm.controls['entry_title'].invalid && (angForm.controls['entry_title'].dirty || angForm.controls['entry_title'].touched)" 
-          class="alert alert-danger warning-container">
-            <div *ngIf="angForm.controls['entry_title'].errors.required" 
-            class="warning">
-              Please enter a title.
-            </div>
-          </div>
           
           <div class="form-group">
             <textarea type="text" class="form-control" 
             formControlName="entry_body" 
             #entry_body
-            autofocus> </textarea>
+            autofocus
+            placeholder="Enter the body"> </textarea>
 
           </div>
-          <div *ngIf="angForm.controls['entry_body'].invalid && (angForm.controls['entry_body'].dirty || angForm.controls['entry_body'].touched)" 
-          class="alert alert-danger warning-container">
-            <div *ngIf="angForm.controls['entry_body'].errors.required"
-            class="warning">
-              Please enter a body.
-            </div>
-          </div>
-          <div class="form-group">
-            <button type="submit" 
-            [disabled]="angForm.pristine || angForm.invalid" 
-            class="btn btn-primary"
-            (click)="addEntry(entry_title.value, entry_body.value)"
-            [disabled]="angForm.pristine || angForm.invalid" 
-            >
-            <i class="fas fa-save"></i> Save</button>
-          </div>
+
+
         </form>
       </div>
     </div>
