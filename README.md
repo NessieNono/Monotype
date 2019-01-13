@@ -40,6 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [ExpressionChangedAfterItHasBeenChecked](https://blog.angularindepth.com/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error-e3fd9ce7dbb4)
 * This check is a safeguard, not a bug
 [Enter Leave Animations](https://medium.freecodecamp.org/how-to-use-animation-with-angular-6-675b19bc3496)
+[Free Ink Splatters](https://every-tuesday.com/freebie-mini-ink-splatter-textures/)
 
 ### LifeCycle Hooks
 

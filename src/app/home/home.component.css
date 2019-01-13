@@ -1,9 +1,8 @@
-
 .title {
-	margin-top: 0.6em;
-	margin-bottom: 0.5em;
+	margin-top: 20vh;
+	margin-bottom: 0.2em;
 	font-family: 'Homemade Apple', cursive;
-	font-size: 12em;
+	font-size: 14vw;
 	text-align: center;
 	position: relative;
 }
@@ -15,3 +14,29 @@
 	text-align: center;
 }
 
+
+.splatter {
+	position: fixed;
+	top: 60vh;
+	left: 10vw;
+	width: 20%;
+	opacity: 0.9;
+}
+
+.dots {
+	position: fixed;
+	top: 10vh;
+	width: 50%;
+	z-index: -20;
+}
+
+.start-writing {
+	text-align: center;
+	position: relative;
+	z-index: 100;
+}
+
+.button-div {
+	text-align: center;
+	margin: 1em;
+}
