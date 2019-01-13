@@ -5,21 +5,32 @@
 	border: 0px solid transparent;
 }
 
-label {
-	font-size: 1.4em;
-	font-weight: bold;
-}
-
-textarea {
-	height: 36vh;
-	border-radius: 0%;
-	background-color: transparent;
-}
 
 input {
-	border-radius: 0%;
+	font-family: "Alike", serif;
+	font-size: 4em;
+	background-color: transparent;
+	color: black;
+	height: 100%;
+}
+textarea {
+	font-family: "Alike", serif;
+	font-size: 1.4em;
+	background-color: transparent;
+	color: black;
+	height: 100%;
+}
+
+
+input:focus {
+	color: black;
 	background-color: transparent;
 }
+textarea:focus {
+	color: black;
+	background-color: transparent;
+}
+
 
 .warning {
 	font-size: 0.8em;
@@ -32,7 +43,7 @@ input {
 
 
 input[type="text"], textarea {
-outline: none;
-box-shadow:none !important;
-border:1px solid #ccc !important;
+	outline: none;
+	box-shadow:none !important;
+	border:1px solid #ccc !important;
 }

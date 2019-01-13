@@ -42,7 +42,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Enter Leave Animations](https://medium.freecodecamp.org/how-to-use-animation-with-angular-6-675b19bc3496)
 [Free Ink Splatters](https://every-tuesday.com/freebie-mini-ink-splatter-textures/)
 [Removing Blue Outline](https://gist.github.com/juliuscsurgo/4440047)
-
+[Inspiration](https://medium.com/new-story)
 ### LifeCycle Hooks
 
 A Component has a lifecycle that is managed by ANGULAR. Angular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM. Angular offers lifecycle hooks that provide visibility into these key life moments and the ability to act when they occur.

@@ -1,7 +1,7 @@
 <div class="row">
 
   <div class="col-md-3">
-    
+
   </div>
 
   <div class="col-md-9"> 
@@ -11,10 +11,10 @@
         <form [formGroup]="angForm" novalidate>
 
           <div class="form-group">
-            <label> Entry Title </label>
             <input type="text" class="form-control" 
             formControlName="entry_title" 
-            #entry_title />
+            #entry_title 
+            autofocus/>
           </div>
 
           <div *ngIf="angForm.controls['entry_title'].invalid && (angForm.controls['entry_title'].dirty || angForm.controls['entry_title'].touched)" 
@@ -26,11 +26,10 @@
           </div>
           
           <div class="form-group">
-            <label> Entry Body </label>
-
             <textarea type="text" class="form-control" 
             formControlName="entry_body" 
-            #entry_body> </textarea>
+            #entry_body
+            autofocus> </textarea>
 
           </div>
           <div *ngIf="angForm.controls['entry_body'].invalid && (angForm.controls['entry_body'].dirty || angForm.controls['entry_body'].touched)" 
