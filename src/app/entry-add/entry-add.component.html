@@ -2,9 +2,11 @@
 
 
   <div class="col-md-12"> 
+    <span> word count: {{ noOfWords }} </span>
 
     <div class="card">
       <div class="card-body">
+
         <form [formGroup]="angForm" novalidate>
 
           <div class="form-group">
@@ -14,7 +16,9 @@
             (click)="addEntry(entry_title.value, entry_body.value)"
             [disabled]="angForm.pristine || angForm.invalid">
             <i class="fas fa-save"></i> Save</button>
+
           </div>
+
 
           <div class="form-group">
             <input type="text" class="form-control" 
