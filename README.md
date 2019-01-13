@@ -37,6 +37,24 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Changing Entire BG Color](https://stackoverflow.com/questions/46670795/how-to-change-whole-page-background-color-in-angular)
 [Website Inspiration](https://relativityoftime.net/)
 [Angular Animations for Loading](https://medium.com/@tomastrajan/how-to-style-angular-application-loading-with-angular-cli-like-a-boss-cdd4f5358554)
+[ExpressionChangedAfterItHasBeenChecked](https://blog.angularindepth.com/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error-e3fd9ce7dbb4)
+* This check is a safeguard, not a bug
+[Enter Leave Animations](https://medium.freecodecamp.org/how-to-use-animation-with-angular-6-675b19bc3496)
+
+### LifeCycle Hooks
+
+A Component has a lifecycle that is managed by ANGULAR. Angular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM. Angular offers lifecycle hooks that provide visibility into these key life moments and the ability to act when they occur.
+
+### Digest Cycles 
+Angular is a MDC framework. So when the model is changed, the view is automatically updated with the help of a loop called a digest cycle.
+
+### Angular Enter & Leave Animations
+:Enter Void => *
+:Leave *=> void
+We do not need to use ngAfterViewInit(), but we can just use the state(), followed by a transition function to make it work
+[Angular Animations with 5 Examples](https://www.youtube.com/watch?v=mVqQDEtRBwA&t=95s)
+
+
 
 ---------------------------------------------------------------------------------------------------
 # Features 
@@ -46,8 +64,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ---------------------------------------------------------------------------------------------------
 # Checklist 
 
-- [ ] Animation on page load of front page
+- [x] Animation on page load of front page
 - [x] Create lite monochrome theme
+- [ ] Implement Bouncing Title 
+- [ ] Make pages slide with animation
 - [ ] Automate Date Entries on each of the entries 
 - [ ] There is a timer, and work automatically saves after some time
 - [ ] ActiveRouteActivated
