@@ -30,29 +30,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ---------------------------------------------------------------------------------------------------
-# Progress
-Link
-https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/
-
-(11:50) Start Programming 
-(15:25) CRUD operations complete 
-
-
-No problems until step 15: Displaying Data on Frontend 
-
-Why Should I use Reactive Forms? : https://stackoverflow.com/questions/45255218/angular2-4-what-for-should-i-use-reactive-forms-when-there-is-built-in-formsmod
-
-Angular Material
-https://www.tutorialspoint.com/angular_material/angular_material_overview.htm
-
-Changing the entire background color: 
-https://stackoverflow.com/questions/46670795/how-to-change-whole-page-background-color-in-angular
-
-
+# Resources
+[Main Tutorial](https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/)
+[Why Should I use Reactive Forms?](https://stackoverflow.com/questions/45255218/angular2-4-what-for-should-i-use-reactive-forms-when-there-is-built-in-formsmod)
+[Angular Material](https://www.tutorialspoint.com/angular_material/angular_material_overview.htm)
+[Changing Entire BG Color](https://stackoverflow.com/questions/46670795/how-to-change-whole-page-background-color-in-angular)
 [Website Inspiration](https://relativityoftime.net/)
+[Angular Animations for Loading](https://medium.com/@tomastrajan/how-to-style-angular-application-loading-with-angular-cli-like-a-boss-cdd4f5358554)
 
 ---------------------------------------------------------------------------------------------------
-
 # Features 
 * Perform CRUD Operations on journal entries
 * Form Validation 
@@ -60,7 +46,8 @@ https://stackoverflow.com/questions/46670795/how-to-change-whole-page-background
 ---------------------------------------------------------------------------------------------------
 # Checklist 
 
-- [ ] Create lite monochrome theme
+- [ ] Animation on page load of front page
+- [x] Create lite monochrome theme
 - [ ] Automate Date Entries on each of the entries 
 - [ ] There is a timer, and work automatically saves after some time
 - [ ] ActiveRouteActivated
