@@ -11,11 +11,13 @@
       <tr *ngFor="let entry of entries" id="{{entry._id}}">
           <td>{{ entry.entry_title }}</td>
           <td>{{ entry.entry_body }}</td>
-          <td><a [routerLink]="['./edit', entry._id]" class="btn btn-primary">Edit</a></td>
+          <td><a [routerLink]="['./edit', entry._id]" class="btn btn-primary"> 
+            <i class="fas fa-edit"></i> Edit</a></td>
           <td><a 
             [routerLink]="" 
             class="btn btn-danger"
-            (click)="deleteEntry(entry._id)" >Delete</a></td>
+            (click)="deleteEntry(entry._id)" >
+            <i class="fas fa-eraser"></i> Delete</a></td>
       </tr>
   </tbody>
 </table>
