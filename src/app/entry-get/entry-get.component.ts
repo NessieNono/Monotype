@@ -37,4 +37,10 @@ export class EntryGetComponent implements OnInit {
       })
   }
 
+  getPreview(entry:Entry) {
+    let preview:string;
+
+  }
+
+
 }
