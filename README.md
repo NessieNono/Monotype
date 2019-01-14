@@ -83,6 +83,7 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [ ] Make about page
 - [ ] Animations on each page to seem dynamic 
 - [ ] Make the icons only if on phone
+- [ ] Make a footer
 
 
 ---------------------------------------------------------------------------------------------------

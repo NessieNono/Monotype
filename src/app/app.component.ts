@@ -38,4 +38,13 @@ constructor(private _loadingBar: SlimLoadingBarService, private _router: Router)
     }
   }
 
+
+  atHome(outlet) {
+    if (outlet.activatedRouteData.state === "home") {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }

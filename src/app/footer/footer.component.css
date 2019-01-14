@@ -1,0 +1,48 @@
+.card-footer {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	margin-top: 10vh;
+}
+
+hr {
+	border: 0;
+	clear:both;
+	display:block;
+	width: 96%;               
+	background-color: #6e6f87;
+	height: 1px;
+}
+
+
+.to-top { 
+	z-index: 30;
+}
+
+.centered { 
+	text-align: center;
+}
+
+.copyright { 
+	text-align: center;
+	margin-top: 1em; 
+	margin-bottom: 2em;
+}
+
+
+/** override Styles.css **/ 
+.webcomic-links {
+	display: block;
+	z-index: 1000;
+}
+
+a { 
+	color: #B7E2E7;
+}
+
+a:hover { 
+	color: #CCFC93!important;
+	text-decoration: none;
+}
+
+

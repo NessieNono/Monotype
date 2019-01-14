@@ -1,0 +1,62 @@
+<div class="card-footer"> 
+	<div class="container">
+
+	<div class="row centered">
+
+		<div class="row">
+			<div class="col-md-4 text-section">
+			<div class="subtitle"> About this Website </div>
+			<br>
+			This website was made as a companion to a webcomic pitch document. 
+			<br><br>
+			This website was made with Angular 7 and Bootstrap. I've learnt many things making this, including Angular's core directives, routing, services and animation. For JavaScript, I've learnt how to implement parallax Scrolling. I plan to deploy this with as a MEAN stack. This was deployed with Heroku.
+			</div>
+			<div class="col-md-4 text-section">
+			<div class="subtitle"> About the Author </div>
+			<br>
+			<div class="col-md-12 social-media">
+				<br>
+				NonoNessie@gmail.com
+				<br>
+			</div>
+			<br>
+			Hello, my name is Ruby Zhouyue Bie, and I am a third-year computer science student from Australia. I am Christian, and I migrated from China when I was 8. I enjoy creating webcomics in my spare time. 
+			<br> <br>
+
+			</div>
+			<div class="col-md-4 text-section">
+			<div class="subtitle"> About GalaxyRider </div>
+			<br>
+			GalaxyRider is a webcomic that I am thinking of illustrating. This website is for pitching this comic to publishers. If it gets accepted, I'll make it. If it gets rejected... well, I'll still make it. I'll just be making it very slowly.
+			<br> <br>
+			This website contains heavy spoilers for GalaxyRider in the story-outline section. Otherwise, the other sections are quite safe to navigate.
+
+			</div>
+		</div>
+
+
+
+		<!-- Links to webcomics -->
+		<br>
+		<div class="col-md-4 webcomic" *ngFor="let webcomic of previousWebcomics">
+				<div class="subtitle">{{webcomic.title}} </div>
+				<a class="webcomic-links" *ngFor="let link of webcomic.links"
+				href={{link.webUrl}} target="_blank"> 
+					{{link.text}}
+				</a>
+		</div>
+
+
+
+	</div>
+	<br>
+
+
+	<hr>
+	<div class="row centered">
+		<div class="col-md-12 copyright"> Copyright &copy; {{ getYear() }} nessienono </div>
+	</div>
+
+
+
+</div>
