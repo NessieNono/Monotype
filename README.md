@@ -43,6 +43,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Free Ink Splatters](https://every-tuesday.com/freebie-mini-ink-splatter-textures/)
 [Removing Blue Outline](https://gist.github.com/juliuscsurgo/4440047)
 [Inspiration](https://medium.com/new-story)
+[Databinding Angular 7](https://www.positronx.io/introduction-data-binding-angular-7/)
+[Regex for Accurate wordcount using JS](https://stackoverflow.com/questions/4593565/regular-expression-for-accurate-word-count-using-javascript)
 ### LifeCycle Hooks
 
 A Component has a lifecycle that is managed by ANGULAR. Angular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM. Angular offers lifecycle hooks that provide visibility into these key life moments and the ability to act when they occur.
@@ -69,13 +71,13 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [x] Animation on page load of front page
 - [x] Create lite monochrome theme
 - [x] Implement Bouncing Title 
+- [x] Add word count on the bottom
+- [x] ActiveRouteActivated
+- [x] Make the lists have a preview of the first 100 words, followed by ...
 - [ ] Make pages slide across with animation
 - [ ] Automate Date Entries on each of the entries 
 - [ ] There is a digital timer, and work automatically saves after some time
-- [x] ActiveRouteActivated
-- [ ] Make the lists have a preview of the first 100 words, followed by ...
 - [ ] Animations to seem dynamic 
-- [ ] Add word count on the bottom
 - [ ] Add option to start/reset timer
 - [ ] Confirmation after a create entry
 - [ ] Make the icons only if on phone

@@ -12,10 +12,10 @@ import { EntryService } from '../entry.service';
 })
 export class EntryAddComponent implements OnInit {
 
-  private noOfWords:number = 0; 
 
 
   angForm: FormGroup;
+  // stored in angForm.value.entry_title, etc.
   constructor(private fb: FormBuilder, private es: EntryService) {
     this.createForm();
   }
@@ -36,10 +36,8 @@ export class EntryAddComponent implements OnInit {
     this.es.addEntry(entry_title, entry_body);
   }
 
-  countWords(entry_body) {
-    this.noOfWords = entry_body.match(/\S+/g).length;
-    console.log("there are ", this.noOfWords); 
-    return this. noOfWords;
+  countWords(body:string) {
+    return body.match(/\S+/g).length;
   }
 
 }

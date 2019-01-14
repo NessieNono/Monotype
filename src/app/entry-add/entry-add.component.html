@@ -2,11 +2,10 @@
 
 
   <div class="col-md-12"> 
-    <span> word count: {{ noOfWords }} </span>
+    
 
     <div class="card">
       <div class="card-body">
-
         <form [formGroup]="angForm" novalidate>
 
           <div class="form-group">
@@ -15,31 +14,33 @@
             class="btn btn-primary"
             (click)="addEntry(entry_title.value, entry_body.value)"
             [disabled]="angForm.pristine || angForm.invalid">
-            <i class="fas fa-save"></i> Save</button>
+            <i class="fas fa-save"></i> Save </button>
 
           </div>
 
 
           <div class="form-group">
             <input type="text" class="form-control" 
-            formControlName="entry_title" 
-            #entry_title 
-            autofocus
-            placeholder="Enter the title" />
+              formControlName="entry_title" 
+              #entry_title 
+              autofocus
+              placeholder="Enter the title"/>
           </div>
           <hr>
 
           
           <div class="form-group">
             <textarea type="text" class="form-control" 
-            formControlName="entry_body" 
-            #entry_body
-            autofocus
-            placeholder="Enter the body"> </textarea>
+              formControlName="entry_body" 
+              #entry_body
+              autofocus
+              placeholder="Enter the body"> 
+            </textarea>
 
           </div>
 
-
+          <!--value is undefined at the moment of the template rendering. You can use safe navigation operator (?) to "protect" template until HTTP call is completed:-->
+          <span *ngIf="angForm.value.entry_body"> Word count: {{ countWords(angForm.value.entry_body) }} </span>
         </form>
       </div>
     </div>
