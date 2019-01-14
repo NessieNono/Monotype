@@ -9,3 +9,27 @@ table {
 	margin-top: 5vh; 
 	padding: 1em;
 }
+
+
+.number {
+	width: 5vw;
+}
+
+.actions {
+	float: right;
+}
+
+.title {
+	width: 15vw;
+}
+.body {
+	width: 25vw;
+}
+
+.edit {
+	float: right;
+}
+
+.delete {
+	float: right;
+}

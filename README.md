@@ -74,12 +74,12 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [x] Add word count on the bottom
 - [x] ActiveRouteActivated
 - [x] Make the lists have a preview of the first 100 words, followed by ...
+- [ ] Confirmation after a create entry
 - [ ] Make pages slide across with animation
 - [ ] Automate Date Entries on each of the entries 
 - [ ] There is a digital timer, and work automatically saves after some time
 - [ ] Animations to seem dynamic 
 - [ ] Add option to start/reset timer
-- [ ] Confirmation after a create entry
 - [ ] Make the icons only if on phone
 
 

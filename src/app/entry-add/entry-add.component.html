@@ -9,11 +9,20 @@
         <form [formGroup]="angForm" novalidate>
 
           <div class="form-group">
-            <button type="submit" 
+
+
+            <button *ngIf="showConfirmation"
+            type="button" class="btn btn-success"> 
+              <i class="fas fa-clipboard-check"></i> Entry saved!! </button>
+
+
+            <button *ngIf="!showConfirmation"
+            type="submit" 
             [disabled]="angForm.pristine || angForm.invalid" 
             class="btn btn-primary"
             (click)="addEntry(entry_title.value, entry_body.value)"
             [disabled]="angForm.pristine || angForm.invalid">
+
             <i class="fas fa-save"></i> Save </button>
 
           </div>
@@ -40,7 +49,7 @@
           </div>
 
           <!--value is undefined at the moment of the template rendering. You can use safe navigation operator (?) to "protect" template until HTTP call is completed:-->
-          <span *ngIf="angForm.value.entry_body"> Word count: {{ countWords(angForm.value.entry_body) }} </span>
+          <div *ngIf="angForm.value.entry_body"> Word count: {{ countWords(angForm.value.entry_body) }} </div>
         </form>
       </div>
     </div>

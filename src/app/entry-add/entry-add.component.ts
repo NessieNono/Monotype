@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms'; // For writing the forms 
 
-
 // Add the created service into this 
 import { EntryService } from '../entry.service'; 
 
@@ -12,7 +11,7 @@ import { EntryService } from '../entry.service';
 })
 export class EntryAddComponent implements OnInit {
 
-
+  private showConfirmation:boolean = false;
 
   angForm: FormGroup;
   // stored in angForm.value.entry_title, etc.
@@ -34,6 +33,11 @@ export class EntryAddComponent implements OnInit {
   // wrapper for service function 
   addEntry(entry_title, entry_body) {
     this.es.addEntry(entry_title, entry_body);
+    // redirect to the entry url after adding the entry
+    // this.router.navigateByUrl("entry"); 
+    // dont do this; this makes the form cancel
+    // instead, lets show a confirmation screen
+    this.showConfirmation = true;
   }
 
   countWords(body:string) {
