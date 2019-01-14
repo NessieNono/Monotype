@@ -1,9 +1,14 @@
 <div class="card">
   <div class="card-body">
     <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <button (click)="updateEntry(entry_title.value, entry_body.value)"
+        [disabled]="angForm.invalid" 
+        class="btn btn-primary"
+        type="button">Update Entry</button>
+      </div>
 
       <div class="form-group">
-        <label class="col-md-4">Entry Title</label>
         <input type="text" class="form-control" 
         formControlName="entry_title" #entry_title 
         [(ngModel)] = "entry.entry_title" />
@@ -14,12 +19,12 @@
           Please enter a title. 
         </div>
       </div>
+      <hr>
 
       <div class="form-group">
-        <label class="col-md-4"> Entry Body </label>
-        <input type="text" class="form-control" 
+        <textarea type="text" class="form-control" 
         formControlName="entry_body" #entry_body
-        [(ngModel)] = "entry.entry_body" />
+        [(ngModel)] = "entry.entry_body"> </textarea>
       </div>
 
 
@@ -31,11 +36,7 @@
       </div>
 
 
-      <div class="form-group">
-        <button (click)="updateEntry(entry_title.value, entry_body.value)"
-        [disabled]="angForm.invalid" 
-        class="btn btn-primary">Update Entry</button>
-      </div>
+      <div *ngIf="angForm.value.entry_body"> Word count: {{ countWords(angForm.value.entry_body) }} </div>
 
 
 

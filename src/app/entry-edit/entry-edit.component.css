@@ -1,0 +1,59 @@
+.card {
+	background-color: #F8F5F4;
+	margin-top: 5vh; 
+	padding: 1em;
+	border: 0px solid transparent;
+}
+
+
+input {
+	font-family: "Alike", serif;
+	font-size: 4em;
+	background-color: transparent;
+	color: black;
+	height: 100%;
+
+}
+textarea {
+	font-family: "Alike", serif;
+	font-size: 1.4em;
+	background-color: transparent;
+	color: black;
+	overflow: auto;
+
+}
+
+input:focus {
+	color: black;
+	background-color: transparent;
+}
+textarea:focus {
+	color: black;
+	background-color: transparent;
+}
+
+
+.warning {
+	font-size: 0.8em;
+}
+
+.warning-container { 
+	padding: 0.1em;
+	padding-left: 1em; padding-right: 1em;
+ }
+
+
+input[type="text"], textarea {
+	outline: none;
+	box-shadow:none !important;
+	border: none !important;
+	border-bottom: none!important;
+}
+
+
+
+textarea {
+	height: 40vh;
+}
+
+

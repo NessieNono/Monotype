@@ -40,8 +40,8 @@ export class EntryAddComponent implements OnInit {
     this.showConfirmation = true;
   }
 
-  countWords(body:string) {
-    return body.match(/\S+/g).length;
+  countWords(body:String) {
+    return this.es.countWords(body);
   }
 
 }

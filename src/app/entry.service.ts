@@ -54,4 +54,10 @@ export class EntryService {
 	    return this.http.delete(`${this.uri}/delete/${id}`); 
 	  }
 
+
+	// Defining a simple word count function 
+	countWords(body:String) {
+		return body.match(/\S+/g).length;
+	}
+
 }

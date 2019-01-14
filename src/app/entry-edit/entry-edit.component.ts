@@ -46,5 +46,9 @@ export class EntryEditComponent implements OnInit {
 		});
 	};
 
+	countWords(body:String) {
+		return this.es.countWords(body);
+	}
+
 
 }
