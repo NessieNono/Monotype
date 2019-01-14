@@ -48,6 +48,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Form Submission Connection Error](https://stackoverflow.com/questions/42531167/angular-2-form-submission-canceled-because-the-form-is-not-connected)
 [Naming Collections in Mongodb](https://stackoverflow.com/questions/9868323/is-there-a-convention-to-name-collection-in-mongodb)
 [Supercharge Router Transition Features Using Animation](https://medium.com/google-developer-experts/angular-supercharge-your-router-transitions-using-new-animation-features-v4-3-3eb341ede6c8)
+[Responsive Bootstrap Website](https://www.youtube.com/watch?v=9cKsq14Kfsw)
 
 ### LifeCycle Hooks
 
@@ -80,10 +81,10 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [x] Make the lists have a preview of the first 100 words, followed by ...
 - [x] Confirmation after a create entry
 - [x] Make the edit page clean
-- [ ] Make about page
+- [x] Make a footer
+- [ ] Make About page
 - [ ] Animations on each page to seem dynamic 
 - [ ] Make the icons only if on phone
-- [ ] Make a footer
 
 
 ---------------------------------------------------------------------------------------------------
