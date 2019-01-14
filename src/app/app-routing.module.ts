@@ -10,26 +10,32 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
+// These states need to match the transitions defined in the routerTransition trigger
 const routes: Routes = [
   {
     path: '', 
-    component: HomeComponent
+    component: HomeComponent, 
+    data: { state: 'home' } 
   },
   {
     path: 'entry/create',
-    component: EntryAddComponent
+    component: EntryAddComponent, 
+    data: { state: 'entryadd' } 
   },
   {
     path: 'entry/edit/:id',
-    component: EntryEditComponent
+    component: EntryEditComponent, 
+    data: { state: 'entryedit' } 
   },
   {
     path: 'entry',
-    component: EntryGetComponent
+    component: EntryGetComponent,
+    data: { state: 'entry' } 
   }, 
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent, 
+    data: { state: 'about' } 
   }, 
   {
     path: '**', 

@@ -10,7 +10,7 @@ import {
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  templateUrl: './home.component.html', 
   styleUrls: ['./home.component.css'], 
   animations: [
   	trigger( 'sideToSide', [

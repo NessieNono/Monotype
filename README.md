@@ -46,6 +46,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Databinding Angular 7](https://www.positronx.io/introduction-data-binding-angular-7/)
 [Regex for Accurate wordcount using JS](https://stackoverflow.com/questions/4593565/regular-expression-for-accurate-word-count-using-javascript)
 [Form Submission Connection Error](https://stackoverflow.com/questions/42531167/angular-2-form-submission-canceled-because-the-form-is-not-connected)
+[Naming Collections in Mongodb](https://stackoverflow.com/questions/9868323/is-there-a-convention-to-name-collection-in-mongodb)
+[Supercharge Router Transition Features Using Animation](https://medium.com/google-developer-experts/angular-supercharge-your-router-transitions-using-new-animation-features-v4-3-3eb341ede6c8)
+
 ### LifeCycle Hooks
 
 A Component has a lifecycle that is managed by ANGULAR. Angular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM. Angular offers lifecycle hooks that provide visibility into these key life moments and the ability to act when they occur.
@@ -76,7 +79,7 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [x] ActiveRouteActivated
 - [x] Make the lists have a preview of the first 100 words, followed by ...
 - [x] Confirmation after a create entry
-- [ ] Make the edit page clean
+- [x] Make the edit page clean
 - [ ] Make pages slide across with animation
 - [ ] Automate Date Entries on each of the entries 
 - [ ] There is a digital timer, and work automatically saves after some time
@@ -85,21 +88,9 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [ ] Make the icons only if on phone
 
 
-## Home Page
-
-## Create Entry
-
-
-## Entries 
-
-## About
-
-
 ---------------------------------------------------------------------------------------------------
 # Notes 
 start Using Visual Studio code, apparently best for jS developement
-
-
 
 * How to use Angular Services in a module 
     1. import the service 
@@ -113,10 +104,6 @@ Inside the angular root folder, create one folder called api and go inside that 
 Mongoose is an object data modeling (ODM) library that provides a rigorous modeling environment for your data, enforcing structure as needed while still maintaining the flexibility that makes MongoDB powerful. 
 
 
-### Naming Collections in Mongodb
-https://stackoverflow.com/questions/9868323/is-there-a-convention-to-name-collection-in-mongodb
-
-
 ### Cannot match any routes 
 Us e
 `./edit/:_id`
@@ -126,7 +113,7 @@ font-family: 'Coiny', cursive;
 font-family: 'Open Sans', sans-serif;
 
 
-### Form Warnings
+### Form Warnings which im not gonna use
 
 ```
 <div *ngIf="angForm.controls['entry_title'].invalid && (angForm.controls['entry_title'].dirty || angForm.controls['entry_title'].touched)" 
