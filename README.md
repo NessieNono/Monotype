@@ -80,11 +80,8 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [x] Make the lists have a preview of the first 100 words, followed by ...
 - [x] Confirmation after a create entry
 - [x] Make the edit page clean
-- [ ] Make pages slide across with animation
-- [ ] Automate Date Entries on each of the entries 
-- [ ] There is a digital timer, and work automatically saves after some time
-- [ ] Animations to seem dynamic 
-- [ ] Add option to start/reset timer
+- [ ] Make about page
+- [ ] Animations on each page to seem dynamic 
 - [ ] Make the icons only if on phone
 
 
