@@ -10,7 +10,7 @@
   <tbody id="tablebody">
       <tr *ngFor="let entry of entries" id="{{entry._id}}">
           <td>{{ entry.entry_title }}</td>
-          <td>{{ entry.entry_body }}</td> <!-- Preview of the first words in this body -->
+          <td>{{ entry.entry_body.substring(0, 30) +"..." }}</td> <!-- Preview of the first words in this body -->
           <td><a [routerLink]="['./edit', entry._id]" class="btn btn-primary"> 
             <i class="fas fa-edit"></i> Edit</a></td>
           <td><a 
