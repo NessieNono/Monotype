@@ -23,7 +23,14 @@ import { trigger, state, style, animate, transition, query, stagger, keyframes }
               ]))]), {optional: true})
 
           ])
+      ]), 
+
+    trigger('delete',[
+      transition(':leave', [
+          animate('1s ease-out', style({ opacity: 0, transform: 'translateX(-50%) translateY(-50%) scale(.7)' }))
+        ]),
       ])
+
   ]
 })
 export class EntryGetComponent implements OnInit {

@@ -9,10 +9,7 @@ import { trigger, state, style, animate, transition, group } from '@angular/anim
 @Component({
   selector: 'app-entry-edit',
   templateUrl: './entry-edit.component.html',
-  styleUrls: ['./entry-edit.component.css'], 
-  animations: [
-  	trigger('delete',[])
-  ]
+  styleUrls: ['./entry-edit.component.css']
 })
 export class EntryEditComponent implements OnInit {
 

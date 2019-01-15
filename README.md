@@ -86,7 +86,7 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [x] Responsive to Phone: at a certain breakpoint, make each button only display the hieroglyphs
 - [x] Make Edit and Add pages responsive
 - [ ] Make deleteing a page have animation too 
-- [ ] Make About page
+- [x] Make About page have animation
 - [ ] Need custom favicons
 - [ ] Decorate not found page
 
