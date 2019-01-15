@@ -51,9 +51,21 @@ input[type="text"], textarea {
 }
 
 
-
 textarea {
 	height: 40vh;
 }
 
+button {
+	float:right;
+	margin-bottom: 1em;
+}
 
+
+@media (max-width: 900px) {
+	input {
+		font-size: 2rem!important;
+	}
+	textarea {
+		font-size: 1.2rem!important;
+	}
+}

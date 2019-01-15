@@ -83,8 +83,10 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [x] Make the edit page clean
 - [x] Make a footer
 - [x] Animations on each page to seem dynamic 
+- [x] Responsive to Phone: at a certain breakpoint, make each button only display the hieroglyphs
+- [x] Make Edit and Add pages responsive
+- [ ] Make deleteing a page have animation too 
 - [ ] Make About page
-- [ ] Responsive to Phone: at a certain breakpoint, make each button only display the hieroglyphs
 - [ ] Need custom favicons
 - [ ] Decorate not found page
 

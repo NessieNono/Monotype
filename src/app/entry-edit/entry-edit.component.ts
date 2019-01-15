@@ -11,15 +11,8 @@ import { trigger, state, style, animate, transition, group } from '@angular/anim
   templateUrl: './entry-edit.component.html',
   styleUrls: ['./entry-edit.component.css'], 
   animations: [
-    trigger('enter', [
-      // :ENTER TRANSITION
-
-      transition('void => flyIn', [
-        style({ opacity: 0.1, transform: 'translateX(-100vw)'}), // from 
-        animate('1000ms ease-in')]), 
-      	style({ transform: 'translateY(0)' }),
-    ])
- ]
+  	trigger('delete',[])
+  ]
 })
 export class EntryEditComponent implements OnInit {
 
