@@ -2,8 +2,8 @@
   <thead>
   <tr>
       <td class="number">No.</td>
-      <td class="title">Entry Title</td>
-      <td class="body">Entry Body</td>
+      <td class="title">Title</td>
+      <td class="body">Body</td>
       <td colspan="2" class="actions">Actions</td>
   </tr>
   </thead>
@@ -12,14 +12,26 @@
       <tr *ngFor="let entry of entries; let i = index" id="{{entry._id}}">
           <td> {{ i+1 }}.</td>
           <td>{{ entry.entry_title }}</td>
-          <td>{{ entry.entry_body.substring(0, 30) +"..." }}</td> <!-- Preview of the first words in this body -->
-          <td><a [routerLink]="['./edit', entry._id]" class="btn btn-primary edit"> 
-            <i class="fas fa-edit"></i> Edit</a></td>
-          <td><a 
-            [routerLink]="" 
-            class="btn btn-danger delete"
-            (click)="deleteEntry(entry._id)" >
-            <i class="fas fa-eraser"></i> Delete</a></td>
+
+          <!-- Preview of the first words in this body -->
+          <td>{{ entry.entry_body.substring(0, 30) +"..." }}</td> 
+
+
+
+
+          <td>
+            <a [routerLink]="['./edit', entry._id]" class="btn btn-primary edit"> 
+                <span class="full"> <i class="fas fa-edit"></i> Edit </span>
+                 <i class="fas fa-edit hieroglyph"></i>
+            </a>
+          </td>
+
+          <td>
+            <a [routerLink]="" class="btn btn-danger delete" (click)="deleteEntry(entry._id)">
+              <span class="full"> <i class="fas fa-eraser"></i> Delete </span>
+              <i class="fas fa-eraser hieroglyph"></i> 
+            </a> 
+          </td>
       </tr>
   </tbody>
 </table> 

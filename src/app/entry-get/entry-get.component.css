@@ -12,7 +12,7 @@ table {
 
 
 .number {
-	width: 5vw;
+	width: 10%;
 }
 
 .actions {
@@ -20,10 +20,10 @@ table {
 }
 
 .title {
-	width: 15vw;
+	width: 20%;
 }
 .body {
-	width: 25vw;
+	width: 40%;
 }
 
 .edit {
@@ -32,4 +32,23 @@ table {
 
 .delete {
 	float: right;
+}
+
+td {
+	padding-right:5px;padding-left: 5px;
+}
+
+@media (max-width: 996px) {
+	.full { display: none!important }
+	.hieroglyph{ 
+		display: block!important; 
+		/** there are 4 buttons, so they divide the screen into 25vw. **/
+		/** Each 25 vw can be made up of 15 being the font,**/
+		font-size: 1.2em;
+		text-align: center!important;
+	}	
+	a.btn {
+		width: 80%;
+	}
+	
 }
