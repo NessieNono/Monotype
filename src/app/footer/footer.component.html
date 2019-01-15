@@ -22,26 +22,17 @@
 
 			</div>
 			<div class="col-md-4 text-section">
-			<div class="subtitle"> About GalaxyRider </div>
+			<div class="subtitle"> Resources </div>
 			<br>
-			GalaxyRider is a webcomic that I am thinking of illustrating. This website is for pitching this comic to publishers. If it gets accepted, I'll make it. If it gets rejected... well, I'll still make it. I'll just be making it very slowly.
+			<div *ngFor="let resource of resources">
+				<a href="{{resource.webUrl}}"> - {{resource.name}} - </a>
+			</div>
 			<br> <br>
-			This website contains heavy spoilers for GalaxyRider in the story-outline section. Otherwise, the other sections are quite safe to navigate.
+
 
 			</div>
 		</div>
 
-
-
-		<!-- Links to webcomics -->
-		<br>
-		<div class="col-md-4 webcomic" *ngFor="let webcomic of previousWebcomics">
-				<div class="subtitle">{{webcomic.title}} </div>
-				<a class="webcomic-links" *ngFor="let link of webcomic.links"
-				href={{link.webUrl}} target="_blank"> 
-					{{link.text}}
-				</a>
-		</div>
 
 
 

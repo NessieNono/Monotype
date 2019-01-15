@@ -10,13 +10,14 @@ import { LinksService } from '../links.service';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private es:LinksService) { }
+  constructor(private ls:LinksService) { }
 
   ngOnInit() {
   }
 
 
-  private links = this.es.getLinks();
+  private links = this.ls.getLinks();
+  private resources = this.ls.getResources();
 
 
   getYear() { 

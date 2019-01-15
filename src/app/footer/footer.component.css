@@ -44,7 +44,9 @@ hr {
 }
 
 a { 
-	color: #50A2C7;
+	font-family: "Alike", serif;
+	color: #2D8581;
+	text-decoration: none;
 }
 
 a:hover {
