@@ -4,10 +4,27 @@ import { Component, OnInit } from '@angular/core';
 import Entry from '../Entry';
 import { EntryService } from '../entry.service';
 
+// Animating entry items
+import { trigger, state, style, animate, transition, query, stagger, keyframes } from '@angular/animations';
+
 @Component({
   selector: 'app-entry-get',
   templateUrl: './entry-get.component.html',
-  styleUrls: ['./entry-get.component.css']
+  styleUrls: ['./entry-get.component.css'], 
+  animations: [
+    trigger('entryCascade', [
+        transition('*=>*', [
+            query(':enter', style({ opacity: 0 }), {optional: true}),
+            query(':enter', stagger('300ms', [
+              animate('0.5s ease-in', keyframes([
+                style({opacity: 0, transform: 'translateY(-75%)', offset: 0}),
+                style({opacity: .8, transform: 'translateY(35px)',  offset: 0.3}),
+                style({opacity: 1, transform: 'translateY(0)',     offset: 1.0}),
+              ]))]), {optional: true})
+
+          ])
+      ])
+  ]
 })
 export class EntryGetComponent implements OnInit {
 

@@ -49,7 +49,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Naming Collections in Mongodb](https://stackoverflow.com/questions/9868323/is-there-a-convention-to-name-collection-in-mongodb)
 [Supercharge Router Transition Features Using Animation](https://medium.com/google-developer-experts/angular-supercharge-your-router-transitions-using-new-animation-features-v4-3-3eb341ede6c8)
 [Responsive Bootstrap Website](https://www.youtube.com/watch?v=9cKsq14Kfsw)
-
+[Angular Stagger Animation](https://www.youtube.com/watch?v=h-bUT5BMQrI)
 ### LifeCycle Hooks
 
 A Component has a lifecycle that is managed by ANGULAR. Angular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM. Angular offers lifecycle hooks that provide visibility into these key life moments and the ability to act when they occur.
