@@ -39,7 +39,7 @@ body {
 .hieroglyph{ display: none}
 
 
-@media (max-width: 634px) {
+@media (max-width: 670px) {
 	.full { display: none!important }
 	.hieroglyph{ 
 		display: block!important; 
