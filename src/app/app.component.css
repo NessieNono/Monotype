@@ -39,17 +39,11 @@ body {
 .hieroglyph{ display: none}
 
 
-@media (max-width: 575.98px) {
+@media (max-width: 634px) {
 	.full { display: none!important }
 	.hieroglyph{ 
 		display: block!important; 
-		font-size: 1.4em !important;
-		width: 100% !important;
 	}
-	a.nav-link {
-		position: absolute;
-		width: 100%;
-	}	
 }
 
 
