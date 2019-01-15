@@ -43,6 +43,13 @@ body {
 	.full { display: none!important }
 	.hieroglyph{ 
 		display: block!important; 
+		/** there are 4 buttons, so they divide the screen into 25vw. **/
+		/** Each 25 vw can be made up of 15 being the font,**/
+		font-size: 1.2em;
+		text-align: center!important;
+	}
+	a.nav-link{
+		width: 25vw!important;
 	}
 }
 
