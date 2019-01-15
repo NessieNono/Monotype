@@ -3,10 +3,23 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import { EntryService } from '../entry.service';
 
+// Animations for first entry 
+import { trigger, state, style, animate, transition, group } from '@angular/animations';
+
 @Component({
   selector: 'app-entry-edit',
   templateUrl: './entry-edit.component.html',
-  styleUrls: ['./entry-edit.component.css']
+  styleUrls: ['./entry-edit.component.css'], 
+  animations: [
+    trigger('enter', [
+      // :ENTER TRANSITION
+
+      transition('void => flyIn', [
+        style({ opacity: 0.1, transform: 'translateX(-100vw)'}), // from 
+        animate('1000ms ease-in')]), 
+      	style({ transform: 'translateY(0)' }),
+    ])
+ ]
 })
 export class EntryEditComponent implements OnInit {
 

@@ -33,9 +33,10 @@
               formControlName="entry_title" 
               #entry_title 
               autofocus
-              placeholder="Enter the title"/>
+              placeholder="Enter the title"
+              [@enterOnLoad]/>
           </div>
-          <hr>
+          <hr [@enterOnLoad]>
 
           
           <div class="form-group">
@@ -43,7 +44,8 @@
               formControlName="entry_body" 
               #entry_body
               autofocus
-              placeholder="Enter the body"> 
+              placeholder="Enter the body"
+              [@enterOnLoad]> 
             </textarea>
 
           </div>

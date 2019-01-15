@@ -82,8 +82,8 @@ We do not need to use ngAfterViewInit(), but we can just use the state(), follow
 - [x] Confirmation after a create entry
 - [x] Make the edit page clean
 - [x] Make a footer
-- [ ] Make About page
 - [ ] Animations on each page to seem dynamic 
+- [ ] Make About page
 - [ ] Make the icons only if on phone
 
 

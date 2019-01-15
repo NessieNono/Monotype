@@ -3,11 +3,22 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms'; // For wr
 
 // Add the created service into this 
 import { EntryService } from '../entry.service'; 
+// For entry animations
+import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-entry-add',
   templateUrl: './entry-add.component.html',
-  styleUrls: ['./entry-add.component.css']
+  styleUrls: ['./entry-add.component.css'], 
+  animations: [
+    trigger('enterOnLoad', [
+        transition(':enter', [
+            style({ transform: 'translateX(-100%)', opacity: '0.1' }),
+            animate('1s ease-out'), 
+            style({ transform: 'translateX(5%)', opacity:'1' }),
+          ])
+      ]),
+  ]
 })
 export class EntryAddComponent implements OnInit {
 
