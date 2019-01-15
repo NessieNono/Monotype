@@ -7,20 +7,17 @@
 			<div class="col-md-4 text-section">
 			<div class="subtitle"> About this Website </div>
 			<br>
-			This website was made as a companion to a webcomic pitch document. 
+			This website is a personal learning project. It is my first implementation of the MEAN Stack.
 			<br><br>
-			This website was made with Angular 7 and Bootstrap. I've learnt many things making this, including Angular's core directives, routing, services and animation. For JavaScript, I've learnt how to implement parallax Scrolling. I plan to deploy this with as a MEAN stack. This was deployed with Heroku.
+			Through this project, I have familiarised myself with many features of the Angular CLI framework, including Routing, Services, Directives and Animations. I have also learnt about responsive design through Bootstrap's media queries.
 			</div>
 			<div class="col-md-4 text-section">
 			<div class="subtitle"> About the Author </div>
 			<br>
-			<div class="col-md-12 social-media">
-				<br>
-				NonoNessie@gmail.com
-				<br>
-			</div>
+			<a *ngFor="let link of links" class="link"
+				href="{{link.webUrl}}" target="_blank"><i class="{{link.name}}"></i> </a>
 			<br>
-			Hello, my name is Ruby Zhouyue Bie, and I am a third-year computer science student from Australia. I am Christian, and I migrated from China when I was 8. I enjoy creating webcomics in my spare time. 
+			Hello, my name is nessienono, and I am a third-year Computer Science student from Sydney, Australia. I am Christian, and I migrated from China when I was 8. I enjoy creating webcomics in my spare time. 
 			<br> <br>
 
 			</div>

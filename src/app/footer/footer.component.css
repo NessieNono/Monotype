@@ -1,3 +1,12 @@
+.subtitle {
+	font-size: 1.8em;
+}
+
+
+.text-section {
+	font-family: "Alike", serif;
+	padding: 2em;
+}
 .card-footer {
 	position: absolute;
 	z-index: 1000;
@@ -29,20 +38,16 @@ hr {
 	margin-bottom: 2em;
 }
 
-
-/** override Styles.css **/ 
-.webcomic-links {
-	display: block;
-	z-index: 1000;
+.link {
+	font-size: 2em;
+	margin-top: 1rem; margin-right: 1rem;
 }
 
 a { 
-	color: #B7E2E7;
+	color: #50A2C7;
 }
 
-a:hover { 
-	color: #CCFC93!important;
-	text-decoration: none;
+a:hover {
+	color:#63D9B6;
 }
-
 

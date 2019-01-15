@@ -3,6 +3,7 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
 
 // Additional resources 
 import { Resource } from '../models/Resource';
+import { LinksService } from '../links.service';
 
 
 @Component({
@@ -21,29 +22,7 @@ import { Resource } from '../models/Resource';
 export class AboutComponent implements OnInit {
 
 
-  private links:Resource[] = [
-    {
-      name:"fab fa-github", 
-      webUrl: "https://github.com/NessieNono/Monotype"
-    },
-    {
-      name: "fas fa-envelope-square",
-      webUrl: "mailto:NonoNessie@gmail.com?Subject=Hello!",
-    },
-    {
-      name: "fab fa-linkedin-in", 
-      webUrl: "https://www.linkedin.com/in/ruby-bie-100a65164/"
-    }, 
-    {
-      name: "fab fa-instagram",
-      webUrl: "https://www.instagram.com/nessienono/",
-    },
-    {
-      name: "fas fa-feather-alt", 
-      webUrl: "https://tapas.io/series/birdenly"
-    }
-  ];
-
+  private links:Resource[] = this.ls.getLinks();
 
 
 
@@ -93,7 +72,7 @@ export class AboutComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private ls:LinksService) { }
 
   ngOnInit() {
   }
