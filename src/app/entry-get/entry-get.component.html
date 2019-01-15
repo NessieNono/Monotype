@@ -9,8 +9,7 @@
   </thead>
 
   <tbody id="tablebody" [@entryCascade]="entries">
-      <tr *ngFor="let entry of entries; let i = index" id="{{entry._id}}"
-          [@delete]>
+      <tr *ngFor="let entry of entries; let i = index" id="{{entry._id}}">
           <td> {{ i+1 }}.</td>
           <td>{{ entry.entry_title }}</td>
 
