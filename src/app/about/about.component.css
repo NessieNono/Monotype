@@ -7,6 +7,21 @@ a {
 	text-decoration: none;
 }
 
-* {
+.link {
+	font-size: 4em;
+	margin-top: 1rem; margin-right: 2rem;
+}
+
+.big-text {
 	font-family: "Alike", serif;
+	font-size: 6em;
+}
+
+
+h1, li, a, .text {
+	font-family: "Alike", serif;
+}
+
+li, a, .text {
+	font-size: 1.2em;
 }

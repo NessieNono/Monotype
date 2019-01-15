@@ -1,18 +1,27 @@
 <div class="row" [@fadeIn]>
 	<div class="col-md-12">
 		<div class="text-section">
-		<h1> Hello </h1>
-		My name is nessienono, and I am a Computer Science student from Sydney, Australia. <br> 
-		This app is my first implementation of the MEAN stack; it was made with Angular 7, Bootstrap, Font Awesome, Google Fonts, Express, NodeJS, Mongodb, and deployed with Heroku.  <br>
+		<div class="big-text"> Hello </div>
+		<div class="row">
+			<div class="col-md-6 text"> 
+				My name is nessienono, and I am a Computer Science student from Sydney, Australia. 
+				<br>
+				<a *ngFor="let link of links" class="link"
+				href="{{link.webUrl}}" target="_blank"><i class="{{link.name}}"></i> </a>
+			</div>
+			<div class="col-md-6 text">
+				This app is my first implementation of the MEAN stack; it was made with Angular 7, Bootstrap, Font Awesome, Google Fonts, Express, NodeJS, Mongodb, and deployed with Heroku.  <br>
+				Here is the 
+				<a href="https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/" target="_blank"> tutorial I used</a>, and additional resources are listed down below.
+			</div>
+
+		</div>
 		<hr>
-		Here is the 
-		<a href="https://appdividend.com/2018/11/04/angular-7-crud-example-mean-stack-tutorial/" target="_blank"> tutorial I used</a>, and additional resources are listed down below.
-		
 		<h1> Features </h1>
 		<ul>
 			<li *ngFor="let feature of features"> {{feature}} </li>
 		</ul>
-
+		<hr>
 		<h1> Additional Resources </h1>
 		<ul>
 			<li *ngFor="let resource of resources"> <a href="{{resource.webUrl}}" target="_blank"> {{resource.name}}</a> </li>

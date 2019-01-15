@@ -21,8 +21,31 @@ import { Resource } from '../models/Resource';
 export class AboutComponent implements OnInit {
 
 
+  private links:Resource[] = [
+    {
+      name:"fab fa-github", 
+      webUrl: "https://github.com/NessieNono/Monotype"
+    },
+    {
+      name: "fab fa-linkedin-in", 
+      webUrl: "https://www.linkedin.com/in/ruby-bie-100a65164/"
+    }, 
+    {
+      name: "fas fa-envelope-square",
+      webUrl: "mailto:NonoNessie@gmail.com?Subject=Hello!",
+    },
+    {
+      name: "fab fa-instagram",
+      webUrl: "https://www.instagram.com/nessienono/",
+    },
+  ];
+
+
+
+
+
   private features:String[] = [ 
-    "Perform CRUD operations on writing entries", 
+    "Perform CRUD operations on written entries", 
     "Makes use of Reactive Forms and form validation", 
     "Includes Angular Routes, Services, Directives and user-friendly Animations",
     "Mobile-responsive design"
