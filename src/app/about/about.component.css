@@ -8,7 +8,7 @@ a {
 }
 
 .link {
-	font-size: 4em;
+	font-size: 3em;
 	margin-top: 1rem; margin-right: 2rem;
 }
 
@@ -22,6 +22,14 @@ h1, li, a, .text {
 	font-family: "Alike", serif;
 }
 
-li, a, .text {
+li, .text {
 	font-size: 1.2em;
+}
+
+a { 
+	color: #50A2C7;
+}
+
+a:hover {
+	color:#63D9B6;
 }

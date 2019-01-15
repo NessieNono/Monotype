@@ -27,17 +27,21 @@ export class AboutComponent implements OnInit {
       webUrl: "https://github.com/NessieNono/Monotype"
     },
     {
-      name: "fab fa-linkedin-in", 
-      webUrl: "https://www.linkedin.com/in/ruby-bie-100a65164/"
-    }, 
-    {
       name: "fas fa-envelope-square",
       webUrl: "mailto:NonoNessie@gmail.com?Subject=Hello!",
     },
     {
+      name: "fab fa-linkedin-in", 
+      webUrl: "https://www.linkedin.com/in/ruby-bie-100a65164/"
+    }, 
+    {
       name: "fab fa-instagram",
       webUrl: "https://www.instagram.com/nessienono/",
     },
+    {
+      name: "fas fa-feather-alt", 
+      webUrl: "https://tapas.io/series/birdenly"
+    }
   ];
 
 
