@@ -18,7 +18,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/entry', entryRoute);
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4000; // For Heroku deployment
 
 const server = app.listen(port, function(){
 	console.log('Listening on port ' + port);
